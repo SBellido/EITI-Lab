@@ -4,20 +4,16 @@ export class Todo extends React.Component {
 
     constructor(props) {
         super(props);
-        
-    }   
-    
+    }
+
     render() {
-        return (  
-           <div className="Todo">
-               <h1>
-                   {this.props.text}
-                   {this.props.priority}
-                   {this.props.dueDate}
-               </h1>
-           </div>
+        return (
+            <tr>
+                <td>{this.props.text}</td>
+                <td>{this.props.priority}</td>
+                <td>{this.props.dueDate.format('DD-MM-YYYY')}</td>
+            </tr>
         );
     }
-}
 
-export default Todo;
+}
