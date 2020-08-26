@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
 import {TodoList} from "./components/TodoList";
+=======
+import {TodoList} from "./TodoList";
+>>>>>>> 46841005514dff921b4d0e92dc48fb237dcfd9d4
 import {Login} from "./components/Login";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import moment from "moment";
 
+<<<<<<< HEAD
 
 import FormControl from '@material-ui/core/FormControl';
 import Input from '@material-ui/core/Input';
@@ -14,6 +19,8 @@ import InputLabel from '@material-ui/core/InputLabel';
 import LockIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 
+=======
+>>>>>>> 46841005514dff921b4d0e92dc48fb237dcfd9d4
 class App extends Component {
 
     constructor(props) {
@@ -33,6 +40,7 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <h1 className="App-title">TODO React App</h1>
                 </header>
+<<<<<<< HEAD
                 <Login />    
                 <br/>
                 <br/>
@@ -72,6 +80,48 @@ class App extends Component {
                             Add #{this.state.items.length + 1}
                         </button>
                     </FormControl>
+=======
+                <Login />
+                <br/>
+                <br/>
+                <form onSubmit={this.handleSubmit} className="todo-form">
+                    <h3>New TODO</h3>
+                    <label htmlFor="text" className="right-margin">
+                        Text:
+                    </label>
+
+                    <input
+                        id="text"
+                        onChange={this.handleTextChange}
+                        value={this.state.text}>
+                    </input>
+
+                    <br/>
+                    <br/>
+                    <label htmlFor="priority" className="right-margin">
+                        Priority:
+                    </label>
+
+                    <input
+                        id="priority"
+                        type="number"
+                        onChange={this.handlePriorityChange}
+                        value={this.state.priority}>
+                    </input>
+                    <br/>
+                    <br/>
+
+                    <DatePicker
+                        id="due-date"
+                        selected={this.state.dueDate}
+                        placeholderText="Due date"
+                        onChange={this.handleDateChange}>
+                    </DatePicker>
+                    <br/>
+                    <button>
+                        Add #{this.state.items.length + 1}
+                    </button>
+>>>>>>> 46841005514dff921b4d0e92dc48fb237dcfd9d4
                 </form>
                 <br/>
                 <br/>
