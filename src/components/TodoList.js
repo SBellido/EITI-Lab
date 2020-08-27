@@ -3,9 +3,6 @@ import {TodoApp} from './TodoApp'
 
 export class TodoList extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const todoList = this.props.todoList.map((todo, i) => {

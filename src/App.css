@@ -63,3 +63,31 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.paper {
+  width: 30%;
+  margin-top: 5%;
+  display: inline-flex !important;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.App {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.avatar {
+  margin: 10px;
+  background: floralwhite;
+}
+
+.form {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.submit {
+  margin-top: 20px;
+}
